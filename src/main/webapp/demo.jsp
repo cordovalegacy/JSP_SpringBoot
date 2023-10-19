@@ -5,7 +5,10 @@
   Time: 3:25 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%--JAVA IMPORTS HERE--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.Date" %>
+<%--JSTL (JSP STANDARD TAG LIBRARY)--%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -18,5 +21,8 @@
     <% } %>
 
     <h3>The Time Is: <%= new Date() %></h3>
+
+    <h1>Two plus two is: </h1>
+    <h2><c:out value="${2+2}"/></h2>
 </body>
 </html>
